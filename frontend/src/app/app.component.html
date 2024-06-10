@@ -1,0 +1,16 @@
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="nav-link" routerLink="items">Found items</a>
+    <a class="nav-link" routerLink="report">Report lost item</a>
+    @if (!loggedIn) {
+      <a class="nav-link" routerLink="login">Login</a>
+      <a class="nav-link" routerLink="signup">Register</a>
+    } @else {
+      <a class="nav-link" (click)="logout()">Logout</a>
+    }
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
