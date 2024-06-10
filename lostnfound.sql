@@ -107,6 +107,8 @@ pw VARCHAR(50) NOT NULL,
 session_key VARCHAR(50)
 );
 
+INSERT INTO contacts VALUES (1, "admin", "admin@admin.com",  "admin-pw");
+
 CREATE TABLE found_items
 (
 id INT PRIMARY KEY AUTO_INCREMENT,
